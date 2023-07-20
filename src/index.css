@@ -1,13 +1,58 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: linear-gradient(to bottom, #4479ff, #6eafff); /* Cambia los colores degradados según tu preferencia */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al contenedor */
+}
+
+.left-section {
+  width: 50%;
+  background-color: #ffffff; /* Cambia el color de fondo de la sección izquierda */
+  padding: 20px;
+  border-right: 2px solid #e6e6e6; /* Línea divisora a la derecha de la sección izquierda */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section img {
+  max-width: 100%; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: auto;
+}
+
+.right-section {
+  width: 50%;
+  background-color: #ffffff; /* Cambia el color de fondo de la sección derecha */
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333333; /* Cambia el color del texto */
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  color: #333333; /* Cambia el color del texto */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

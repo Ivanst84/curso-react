@@ -1,0 +1,45 @@
+.TodoCounter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: blink 1s 2 alternate forwards; /* Modificado */
+}
+
+.TodoCounter span {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes sparkles-animation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sparkles {
+  animation: sparkles-animation 1s infinite;
+}
